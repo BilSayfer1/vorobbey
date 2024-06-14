@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>Instasvalka</title>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logotype">
+                <img src="./logo/logo.svg" alt="logo">
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+            <div class="oth_func">
+                <button id="home">
+                    <img src="./icons/home.svg" alt="home">
+                </button>
+                <button id="messages">
+                    <img src="./icons/messages.svg" alt="messages">
+                </button>
+                <button id="navigator">
+                    <img src="./icons/navigator.svg" alt="navigator">
+                </button>
+                <button id="notifications">
+                    <img src="./icons/notifications.svg" alt="notifications">
+                </button>
+                <button id="darkLight_mode">
+                    <img src="./icons/moon.svg" alt="mode">
+                </button>
+                
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <div class="leftSide-cont">
+            <div class="leftSide-top-all">
+                <button id="previous"><img src="./iconsLight/previous.png"></button>
+                <div class="leftSide-top"></div>
+                <button id="next"><img src="./iconsLight/next.png"></button>
+            </div>
+            <div class="leftSide-bottom"></div>
+        </div>
+        <div class="rightSide-cont">
+
+            <div class="insideUser">
+                <div class="mainUser">
+                    <div class="mainUser-left">
+                        <div class="mainUser-photo">
+                            <img src="./icons/image.png">
+                        </div>
+                        <div class="mainUser-nickName_realName">
+                            <span class="nickName">_al.safir_</span>
+                            <span class="realName">Al' Safir Bozorov</span>
+                        </div>
+                    </div>
+                    <button class="mainUser-right">Switch</button>
+                </div>
+                <div class="othUsers">
+                    <div class="topOthUsers">
+                        <span class="suggestTxt">Suggestions For You</span>
+                        <span class="seeFollow">See All</span>
+                    </div>
+                    <div class="bottomOthUsers"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="modal">
+        <div id="content">
+            <img src="">
+        </div>
+    </div>
+
+    <div id="postModal">
+        <div id="postContent">
+            <div class="content-left">
+                <img src="./img/avatar.png" alt="post">
+            </div>
+
+            <div class="content-right">
+                <div class="content-userData">
+                    <div class="content-imgNick">
+                        <img src="./icons/image.png" alt="user">
+                        <span>_al.safir_</span>
+                    </div>
+                    <button class="content-options">
+                        <img src="./icons/dots.svg" alt="options">
+                    </button>
+                </div>
+
+                <div class="content-comments"></div>
+
+                <div class="content-settings">
+                    <button id="viewInsights">View insights</button>
+                    <button id="boostPost">Boost post</button>
+                </div>
+
+                <div class="content-data">
+                    <div class="conten-dataTop">
+                        <div class="content-leftActions">
+                            <button id="content-like"><img src="./icons/like.png" alt="like"></button>
+                            <button id="content-comment"><img src="./icons/comment.png" alt="comment"></button>
+                            <button id="content-send"><img src="./icons/send.png" alt="send"></button>
+                        </div>
+                        <div class="content-rightActions">
+                            <button id="content-save"><img src="./icons/save.svg" alt="save"></button>
+                        </div>
+                    </div>
+                    <span>Liked by 8,887 people</span>
+                </div>
+
+                <div class="content-addComment">
+                    <button id="content-smile"><img src="./icons/smile.png" alt="smile"></button>
+                    <input type="text" placeholder="Add a comment...">
+                    <button id="content-post">Post</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
